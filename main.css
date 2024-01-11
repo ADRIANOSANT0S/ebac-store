@@ -93,7 +93,6 @@ button {
 footer {
     padding: 20px 0;
     background-color: #010187da;
-
 }
 
 footer p {
@@ -147,7 +146,6 @@ footer p {
     .container {
         width: 90%;
     }
-
     
     #about-store {
         display: block;
@@ -171,5 +169,4 @@ footer p {
     .shoes div {
         margin-bottom: 16px;
     }
-
 }
