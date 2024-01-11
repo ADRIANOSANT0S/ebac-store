@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f0f079;
+}
+
+header {
+    background-color: #010187da;
+    color: #fff;
+    padding: 16px 0;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container,
+nav ul {
+    display: flex;
+    justify-content: space-between
+}
+
+nav li {
+    padding: 8px;
+}
+
+nav a {
+    font-size: 1.125em;
+    color: #fff;
+}
+
+#about-store {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#about-store img{
+    max-height: 400px;
+}
+
+.information-store {
+    margin-left: 32px;
+}
+
+h2 {
+    color:#010187da;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 8px 0;
+    border-bottom: 2px solid #010187da;
+}
+
+.shoes {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    gap: 2%;
+    margin-bottom: 40px;
+}
+
+.shoes img {
+    width: 100%
+}
+
+.shoes h3 {
+    margin: 32px 0 16px 0;
+    font-size: 1.25em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #010187da;
+    color: #fff;
+    padding: 8px 2px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #010187da;
+
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    header > .container {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: block;
+        width: 120px;
+    }
+
+    nav li {
+        padding: 2px;
+    }
+
+    #about-store {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    #about-store img{
+        width: 100%;
+    }
+
+    .information-store {
+        margin-left: 0;
+    }
+
+    .shoes {
+        display: block;
+    }
+
+    .shoes div {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    
+    #about-store {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    #about-store img{
+        width: 100%;
+    }
+
+    .information-store {
+        margin-left: 0;
+    }
+
+    .shoes {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .shoes div {
+        margin-bottom: 16px;
+    }
+
+}
